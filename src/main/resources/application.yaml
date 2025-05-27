@@ -1,5 +1,5 @@
 server:
-  port: 8090  # Port générique, remplacé par celui du profil actif
+  port: 9090  # Port générique, remplacé par celui du profil actif
 
 spring:
   application:
