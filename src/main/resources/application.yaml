@@ -1,0 +1,28 @@
+server:
+  port: 8090  # Port générique, remplacé par celui du profil actif
+
+spring:
+  application:
+    name: ProductCatalogService
+  profiles:
+    active: dev  # Définit "dev" comme profil actif par défaut
+#  security:
+#    user:
+#      name: admin
+#      password: 123
+
+# customize the path for swagger doc :
+#springdoc:
+#  api-docs:
+#    path: /api-docs
+#  swagger-ui:
+#    path: /swagger-ui-custom.html
+# By default, the OpenAPI definitions are in JSON format.
+# For yaml format, we can obtain the definitions at:
+# /api-docs.yaml
+
+
+# Modifier le profile :
+# Si tu veux exécuter ton application en mode prod, sans modifier application.yaml
+# cmd: mvn spring-boot:run -Dspring-boot.run.profiles=prod
+# Ou en ajoutant --spring.profiles.active=prod aux arguments JVM dans IntelliJ ou Eclipse.
