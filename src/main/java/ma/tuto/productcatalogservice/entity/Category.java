@@ -30,6 +30,7 @@ public class Category {
 
     // Relation Un-à-Plusieurs avec l'entité Product
     // Une catégorie peut avoir plusieurs produits
+    // Relation bidirectionnelle optionnelle
     @OneToMany(
             mappedBy = "category", // "category" est le nom du champ dans l'entité Product qui établit la relation
             cascade = CascadeType.ALL, // Les opérations (persist, merge, remove, etc.) sur Category sont propagées aux Products liés

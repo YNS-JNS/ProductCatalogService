@@ -44,4 +44,17 @@ public class ProductDto {
         (ex: ProductCreateDto, ProductResponseDto). Pour cet exemple,
          on va gérer cela dans le mapper/service.
      */
+
+    // Validation avec @Valid sur les DTO
+    // Annotations possibles : @NotNull, @NotBlank, @Size, @Email, @Pattern, etc.
+
+    // ma.tuto.myProject
+    //├─ controller
+    //├─ service
+    //├─ repository
+    //├─ model
+    //│   ├─ entity
+    //│   ├─ dto
+    //│   └─ mapper
+
 }
